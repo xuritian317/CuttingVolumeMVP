@@ -1,0 +1,3 @@
+dataset: Butterfly200
+num_classes: 200
+img_size: 384

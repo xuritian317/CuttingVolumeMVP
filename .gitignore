@@ -1,6 +1,8 @@
 *.pyd
 *.so
 *.dll
+*.bag
+frag_all_point.txt
 
 pyrealsense2/*
 pyrealsense2.egg-info

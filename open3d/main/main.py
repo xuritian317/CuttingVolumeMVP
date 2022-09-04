@@ -13,7 +13,7 @@ if __name__ == "__main__":
     print("try to calculate the volume of cutting ... ")
 
     print("->正在加载点云... ")
-    pcd = o3d.io.read_point_cloud("src/box_badge.ply")
+    pcd = o3d.io.read_point_cloud("../src/cutting1.ply")
     print(pcd)
     # print(np.asarray(pcd.points))
     # o3d.io.write_point_cloud("box1.pcd", pcd)

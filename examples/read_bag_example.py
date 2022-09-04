@@ -18,7 +18,7 @@ import os.path
 parser = argparse.ArgumentParser(description="Read recorded bag file and display depth stream in jet colormap.\
                                 Remember to change the stream fps and format to match the recorded.")
 # Add argument which takes path to a bag file as an input
-parser.add_argument("-i", "--input", type=str, help="Path to the bag file")
+parser.add_argument("-i", "--input", type=str, default='../open3d/src/20220824_110311.bag', help="Path to the bag file")
 # Parse the command line arguments to an object
 args = parser.parse_args()
 # Safety if no parameter have been given
@@ -50,7 +50,7 @@ try:
 
     # Create opencv window to render image in
     cv2.namedWindow("Depth Stream", cv2.WINDOW_AUTOSIZE)
-    
+
     # Create colorizer object
     colorizer = rs.colorizer()
 
